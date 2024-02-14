@@ -1,0 +1,32 @@
+.cart-item-container{
+    height: 50%;
+    width: 400px;
+}
+
+.cart-list{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem, 1rem;
+}
+
+.cart-list-item{
+    margin-top: 1rem;
+}
+
+.cart-sub-total{
+    margin-top: 1rem;
+}
+
+.cart-sub-total > p{
+    font-weight: bold;
+    text-align: right;
+}
+
+hr.solid{
+    border-top: 3px solid #bbb;
+}
+
+.cart-checkout-button > button{
+    width: 100%;
+    margin: 1 rem;
+}

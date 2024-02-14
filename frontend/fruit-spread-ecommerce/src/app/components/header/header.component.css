@@ -1,0 +1,29 @@
+.header-icon{
+    padding: 1, 4, 0, 2;
+}
+
+.header-icon:hover{
+    cursor: pointer;
+}
+
+.header-spacer{
+    flex: 1 1 auto;
+}
+
+.header-toolbar{
+    position: sticky;
+}
+
+.header-buttons{
+    display: flex;
+    align-items: center;
+}
+
+.header-buttons>a{
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+.active-link{
+    background-color: black;
+}

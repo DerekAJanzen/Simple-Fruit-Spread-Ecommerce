@@ -1,0 +1,14 @@
+<mat-toolbar color="primary" class="header-toolbar">
+    <mat-toolbar-row>
+        <span>Derek's Jams and Preserves</span>
+        <div class="header-buttons">
+            <a mat-button routerLink="/home" routerLinkActive="active-link" arriaCurrentWhenActive="page">Home</a>
+            <a mat-button routerLink="/jams" routerLinkActive="active-link" arriaCurrentWhenActive="page">Jams</a>
+            <a mat-button>Preserves</a>
+        </div>
+        <span class="header-spacer"></span>
+        <div class='header-icon'>
+            <mat-icon matBadge="{{itemCount()}}" matBadgeHidden="{{hidden()}}" matBadgeColor = "warn" (click)="openCart()">shopping_cart</mat-icon>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
