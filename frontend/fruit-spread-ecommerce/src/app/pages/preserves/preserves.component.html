@@ -1,0 +1,15 @@
+<div class="card-container">
+    <mat-card *ngFor="let preserve of (preserves$ | async)" class="card">
+        <mat-card-header>
+            <mat-card-title>{{preserve.flavor}} {{preserve.type}}</mat-card-title>
+            <mat-card-subtitle>{{preserve.maker}}</mat-card-subtitle>
+        </mat-card-header>
+        <img class='card-image' mat-card-image src={{preserve.image}}/>
+        <mat-card-content>
+            <p>{{preserve.description}}</p>
+        </mat-card-content>
+        <mat-card-actions class="card-actions">
+            <button mat-raised-button color="accent" (click)="addToCart(preserve)">Add to Cart!</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
